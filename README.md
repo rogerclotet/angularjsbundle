@@ -3,6 +3,8 @@ AngularJS Bundle
 
 This bundle provides a base template for an AngularJS + Symfony2 project. It includes the AngularJS assets and loads them by default.
 
+If you need a more extensible and configurable option check this other project: https://github.com/danidelalin/UndfAngularJsBundle
+
 AngularJS
 ---------
 
