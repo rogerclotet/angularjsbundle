@@ -1,6 +1,6 @@
 <?php
 
-namespace TS\Bundle\AngularJSBundle;
+namespace TS\AngularJSBundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 

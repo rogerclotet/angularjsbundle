@@ -1,6 +1,6 @@
 <?php
 
-namespace TS\Bundle\AngularJSBundle\DependencyInjection;
+namespace TS\AngularJSBundle\DependencyInjection;
 
 use Symfony\Component\Config\Definition\Builder\TreeBuilder;
 use Symfony\Component\Config\Definition\ConfigurationInterface;

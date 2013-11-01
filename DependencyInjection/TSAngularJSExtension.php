@@ -1,6 +1,6 @@
 <?php
 
-namespace TS\Bundle\AngularJSBundle\DependencyInjection;
+namespace TS\AngularJSBundle\DependencyInjection;
 
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\Config\FileLocator;
