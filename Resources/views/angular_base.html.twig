@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html ng-app="{% block app_name %}myApp{% endblock %}">
+    <head>
+        <meta charset="UTF-8" />
+        <title>{% block title %}Welcome!{% endblock %}</title>
+        {% block stylesheets %}{% endblock %}
+        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+        {% block javascripts %}
+            {% javascripts '@TSAngularJSBundle/Resources/public/js/angular.min.js'
+                           '@TSAngularJSBundle/Resources/public/js/angular-loader.min.js'
+                           '@TSAngularJSBundle/Resources/public/js/angular-route.min.js'
+                           '@TSAngularJSBundle/Resources/public/js/angular-cookies.min.js'
+                           '@TSAngularJSBundle/Resources/public/js/angular-sanitize.min.js'
+                           '@TSAngularJSBundle/Resources/public/js/angular-resource.min.js'
+               output="js/angular.js"
+            %}
+                <script src="{{ asset_url }}" type="text/javascript" ></script>
+            {% endjavascripts %}
+
+        {% endblock %}
+    </head>
+    <body ng-controller="{% block controller_name %}MainCtrl{% endblock %}">
+        {% block body %}{% endblock %}
+        {% block modal %}{% endblock %}
+    </body>
+</html>
