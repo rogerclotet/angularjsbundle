@@ -6,12 +6,12 @@
         {% block stylesheets %}{% endblock %}
         <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
         {% block javascripts %}
-            {% javascripts '@TSAngularJSBundle/Resources/public/js/angular.min.js'
-                           '@TSAngularJSBundle/Resources/public/js/angular-loader.min.js'
-                           '@TSAngularJSBundle/Resources/public/js/angular-route.min.js'
-                           '@TSAngularJSBundle/Resources/public/js/angular-cookies.min.js'
-                           '@TSAngularJSBundle/Resources/public/js/angular-sanitize.min.js'
-                           '@TSAngularJSBundle/Resources/public/js/angular-resource.min.js'
+            {% javascripts  '@TSAngularJSBundle/Resources/public/js/angular.min.js'
+                            '@TSAngularJSBundle/Resources/public/js/angular-resource.min.js'
+                            '@TSAngularJSBundle/Resources/public/js/angular-loader.min.js'
+                            '@TSAngularJSBundle/Resources/public/js/angular-route.min.js'
+                            '@TSAngularJSBundle/Resources/public/js/angular-cookies.min.js'
+                            '@TSAngularJSBundle/Resources/public/js/angular-sanitize.min.js'
                output="js/angular.js"
             %}
                 <script src="{{ asset_url }}" type="text/javascript" ></script>
