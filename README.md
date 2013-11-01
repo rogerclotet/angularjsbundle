@@ -27,7 +27,7 @@ To configure just add in AppKernel.php:
 ```php
 $bundles = array(
     // ...
-    new Udf\AngularJSBundle\UdfAngularJSBundle(),
+    new TS\AngularJSBundle\UdfAngularJSBundle(),
 )
 ````
 
