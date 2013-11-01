@@ -23,19 +23,25 @@ To use the template you just need to extend yours this way:
 {% extends 'TSAngularJSBundle::angular_base.html.twig' %}
 ```
 
-To configure just add :
-```
-// AppKernel.php
-new Udf\AngularJSBundle\UdfAngularJSBundle()
+To configure just add in AppKernel.php:
+```php
+$bundles = array(
+    // ...
+    new Udf\AngularJSBundle\UdfAngularJSBundle(),
+)
 ````
 
-```
-// Edit your composer.json and add this line in the "require" object
-"rogerclotet/angularjsbundle" :"1.0.0"
+Edit your composer.json and add this line in the "require" object:
+```json
+{
+    "require": {
+        "rogerclotet/angularjsbundle": "1.0.*"
+    }
+}
 ```
 
 And you should add this bundle in assetic configuration in your app/config/config.yml:
-```
+```yaml
 assetic:
     bundles: [ TSAngularJSBundle ]
 ```
